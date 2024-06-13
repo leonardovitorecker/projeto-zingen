@@ -1,0 +1,7 @@
+#abount {
+  background-color: var(--surface-color);
+
+  & .even-colums {
+    gap: 2rem;
+  }
+}
