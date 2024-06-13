@@ -11,9 +11,10 @@
 
   border-radius: 0.5rem;
 
-  font: var(--fw-md) var(-fs-base)/1.5rem var(--ff-sans);
+  font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
 
   cursor: pointer;
+
   background: var(--btn-bg-color);
   color: var(--btn-color);
 }
@@ -23,7 +24,7 @@
     90deg,
     var(--brand-color-secondary) 0%,
     var(--brand-color-primary) 100%
-  )
+  );
   --btn-color: var(--surface-color);
 
   -webkit-background-clip: initial;
@@ -35,12 +36,10 @@
   padding: 0.5rem 1rem;
   font-size: var(--fs-sm);
 }
-
 .btn-md {
   padding: 0.75rem 1.5rem;
   font-size: var(--fs-base);
 }
-
 .btn-lg {
   padding: 1rem 2rem;
   font-size: 1.125rem;
@@ -48,6 +47,7 @@
 
 .btn[aria-label] {
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -68,12 +68,10 @@
 }
 
 @media (width >= 80em) {
-
   .btn-sm {
     padding: 0.75rem 1.5rem;
     font-size: var(--fs-base);
   }
-
   .btn-md {
     padding: 1rem 2rem;
     font-size: 1.125rem;
